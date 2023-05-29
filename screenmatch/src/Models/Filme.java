@@ -10,7 +10,7 @@ public class Filme {
 
 
 
-void exibiFichaTecnica(){
+public void exibiFichaTecnica(){
     System.out.println("Nome do filme: " + getNome());
     System.out.println("Ano de lançamento: " +getAnoDeLancamento());
     System.out.println("Soma de Avaliações: " +getSomaDasAvaliacoes());
@@ -22,67 +22,67 @@ void exibiFichaTecnica(){
 
 
 //PEGA O NOME
-String getNome(){
+public String getNome(){
     return nome;
 }
 //MODIFICA O NOME
-void setNome(String nome){
+public void setNome(String nome){
     this.nome = nome ;
 }
 
 
 //PEGA O ANO DE LANÇAMENTO
-int getAnoDeLancamento(){
+public int getAnoDeLancamento(){
     return anoDeLancamento;
 }
 //MODIFICA O ANO DE LANÇAMENTO
-void setAnoDeLancamento(int anoDeLancamento){
+public void setAnoDeLancamento(int anoDeLancamento){
     this.anoDeLancamento = anoDeLancamento;
 }
 
 
 //PEGA A SOMA DE TODAS AVALIAÇÕES
-double getSomaDasAvaliacoes(){
+public double getSomaDasAvaliacoes(){
     return somaDasAvaliacoes;
 }
 
 
 
 //PEGA SE O FILME ESTÁ INCLUIDO NO PLANO MENSAL
-boolean getIncluidoNoPlano(){
+public boolean getIncluidoNoPlano(){
     return incluidoNoPlano;
 }
 //MODIFICA A INCLUSÃO NO PLANO MENSAL
-void setIncluidoNoPlano(boolean incluidoNoPlano){
+public void setIncluidoNoPlano(boolean incluidoNoPlano){
     this.incluidoNoPlano = incluidoNoPlano;
 }
 
 
 //PEGA O TOTAL DE AVALIAÇOES
-int getTotalDeAvaliacoes(){
+public int getTotalDeAvaliacoes(){
     return totalDeAvaliacoes;
 }
 
 
 
 //PEGA A DURAÇÃO DO FILME
-int getDuracaoEmMinutos(){
+public int getDuracaoEmMinutos(){
     return duracaoEmMinutos;
 }
 //MODIFICA A DURAÇÃO DO FILME
-void setDuracaoEmMinutos(int duracaoEmMinutos){
+public void setDuracaoEmMinutos(int duracaoEmMinutos){
     this.duracaoEmMinutos = duracaoEmMinutos;
 }
 
 
 //DA UMA NOTA PRA O FILME
-void avalia(double nota){
+public void avalia(double nota){
     this.somaDasAvaliacoes += nota;
     this.totalDeAvaliacoes ++;
 } 
 
 //PEGA A MEDIA DE TODAS AVALIAÇÕES
-double getMediaDasAvaliacoes(){
+public double getMediaDasAvaliacoes(){
     return this.somaDasAvaliacoes / this.totalDeAvaliacoes;
 
 }
