@@ -24,14 +24,14 @@ Este é um projeto em Java que simula uma plataforma de streaming, desenvolvido 
 - `src/`
   - `models/`
     - `Filme.java`: Sublasse da classe Titulo que representa um filme.
-    - `Serie.java`: Subclasse da classe Ttiulo que representa uma série.
+    - `Serie.java`: Subclasse da classe Titulo que representa uma série.
     - `Episodios.java`: Classe que representa um episódio de uma série.
-    - `Titulo.java`: Classe que contém a lógica da plataforma de streaming.
+    - `Titulo.java`: Classe mãe que herda as classes Filme e Serie.
     - `Principal.java`: Classe principal para execução do projeto.
   - `CalculadoraTempoReal/`
     - `Calculadora.java`: Classe que calcula a duração em minutos de filme e séries.
     - `Classificavel.java`: Interface que classifica filmes e séries.
-    - `FiltroRecomendacao.java`: Classe que filtra e faz a recomendação de filmes e séries aparti de sua avaliações e visualizações.
+    - `FiltroRecomendacao.java`: Classe que filtra e faz a recomendação de filmes e séries apartir de sua avaliações e visualizações.
   
     
 
