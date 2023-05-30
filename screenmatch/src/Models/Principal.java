@@ -15,7 +15,9 @@ public class Principal {
         filme.avalia(8);
         filme.avalia(7);
         filme.exibiFichaTecnica();
+        system.out.println("");
         System.out.println("\n");
+        
 
         //CRIANDO E MANIPULANDO OBEJTO OUTRO FILME
         Filme outroFilme = new Filme();
